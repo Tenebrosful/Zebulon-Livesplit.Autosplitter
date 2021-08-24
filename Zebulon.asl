@@ -19,7 +19,7 @@ startup {
 }
 
 start {
-    if(current.level == 1){
+    if(old.level == 0 && current.level == 1){
         print("[ZEBULON] START" + " Niveau: " + current.level);
         return true;
     }
